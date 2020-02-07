@@ -18,10 +18,24 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body>
-    
-    <div class="site-wrap">
+  <div>
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+
+
+
+    <div class="site-wrap hide">
 
       <a href="#" class="offcanvas-toggle js-offcanvas-toggle">Menu</a>
       <div class="offcanvas_menu" id="offcanvas_menu">
@@ -53,7 +67,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <p>It's my first year in the college.</p>
         </div>
 
-        <p>
+        <p data-aos="fade-up" data-aos-anchor-placement="top-center">
           <a href="#" class="mr-2 mb-2">Twitter</a>
           <a href="#" class="mr-2 mb-2">Facebook</a>
           <a href="#" class="mr-2 mb-2">Instagram</a> 
@@ -98,7 +112,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
               </div>
             </div>
           </div> -->
-        </div>
+        
         
       </main>
     </div>
@@ -113,6 +127,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/main.js"></script>
-
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    setTimeout(function(){
+      AOS.init();}, 3500);
+    
+  </script>
   </body>
 </html>
